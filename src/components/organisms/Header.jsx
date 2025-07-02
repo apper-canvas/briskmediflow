@@ -95,7 +95,7 @@ const Header = ({ onMenuToggle, searchValue, onSearchChange }) => {
           className="flex items-center space-x-3 pl-3 border-l border-gray-200 cursor-pointer hover:bg-gray-50 rounded-lg px-2 py-1 transition-colors duration-200"
           onClick={() => navigate('/profile')}
         >
-          <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
+<div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
             <ApperIcon name="User" size={16} className="text-white" />
           </div>
           <div className="hidden md:block">

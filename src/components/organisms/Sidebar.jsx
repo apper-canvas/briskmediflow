@@ -20,7 +20,7 @@ const navigationItems = [
     <div className="flex flex-col h-full">
       {/* Logo */}
       <div className="flex items-center px-6 py-4 border-b border-gray-200">
-        <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center mr-3">
+<div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-accent-500 rounded-lg flex items-center justify-center mr-3">
           <ApperIcon name="Activity" size={20} className="text-white" />
         </div>
         <h1 className="text-xl font-bold gradient-text font-display">
