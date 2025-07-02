@@ -85,11 +85,10 @@
 .Toastify__toast--success {
   @apply bg-success text-white border-success/20;
 }
-info: '#a855f7',    // maps to primary.500
+
 .Toastify__toast--error {
   @apply bg-error text-white border-error/20;
 }
-
 .Toastify__toast--warning {
   @apply bg-warning text-gray-900 border-warning/20;
 }
