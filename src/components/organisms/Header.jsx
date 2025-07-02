@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { motion } from 'framer-motion'
-import ApperIcon from '@/components/ApperIcon'
-import Button from '@/components/atoms/Button'
-import SearchBar from '@/components/molecules/SearchBar'
-import NotificationPanel from '@/components/molecules/NotificationPanel'
-import notificationService from '@/services/api/notificationService'
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+import ApperIcon from "@/components/ApperIcon";
+import Button from "@/components/atoms/Button";
+import SearchBar from "@/components/molecules/SearchBar";
+import NotificationPanel from "@/components/molecules/NotificationPanel";
+import notificationService from "@/services/api/notificationService";
 
-const Header = ({ onMenuToggle, searchValue, onSearchChange }) => {
+const Header = ({ onMenuToggle, searchValue, onSearchChange, onClearSearch }) => {
   const navigate = useNavigate()
   const [showNotifications, setShowNotifications] = useState(false)
   const [notifications, setNotifications] = useState([])
@@ -53,10 +53,11 @@ const Header = ({ onMenuToggle, searchValue, onSearchChange }) => {
           className="lg:hidden !p-2"
         />
         
-        <div className="hidden lg:block">
+<div className="hidden lg:block">
           <SearchBar
             value={searchValue}
             onChange={onSearchChange}
+            onClear={onClearSearch}
             placeholder="Search patients, doctors, appointments..."
           />
         </div>
