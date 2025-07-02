@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import ApperIcon from '@/components/ApperIcon'
 import Button from '@/components/atoms/Button'
@@ -7,7 +8,8 @@ import NotificationPanel from '@/components/molecules/NotificationPanel'
 import notificationService from '@/services/api/notificationService'
 
 const Header = ({ onMenuToggle, searchValue, onSearchChange }) => {
-const [showNotifications, setShowNotifications] = useState(false)
+  const navigate = useNavigate()
+  const [showNotifications, setShowNotifications] = useState(false)
   const [notifications, setNotifications] = useState([])
   const [unreadCount, setUnreadCount] = useState(0)
 
@@ -87,9 +89,12 @@ const [showNotifications, setShowNotifications] = useState(false)
           variant="ghost"
           icon="Settings"
           className="!p-2"
-        />
+/>
 
-        <div className="flex items-center space-x-3 pl-3 border-l border-gray-200">
+        <div 
+          className="flex items-center space-x-3 pl-3 border-l border-gray-200 cursor-pointer hover:bg-gray-50 rounded-lg px-2 py-1 transition-colors duration-200"
+          onClick={() => navigate('/profile')}
+        >
           <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
             <ApperIcon name="User" size={16} className="text-white" />
           </div>

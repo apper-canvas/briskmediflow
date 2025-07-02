@@ -10,7 +10,7 @@ import Billing from '@/components/pages/Billing'
 import Inventory from '@/components/pages/Inventory'
 import Reports from '@/components/pages/Reports'
 import Notifications from '@/components/pages/Notifications'
-
+import UserProfile from '@/components/pages/UserProfile'
 function App() {
   return (
     <Router>
@@ -22,9 +22,11 @@ function App() {
             <Route path="/appointments" element={<Appointments />} />
             <Route path="/doctors" element={<Doctors />} />
             <Route path="/billing" element={<Billing />} />
-            <Route path="/inventory" element={<Inventory />} />
+<Route path="/inventory" element={<Inventory />} />
             <Route path="/reports" element={<Reports />} />
             <Route path="/notifications" element={<Notifications />} />
+            <Route path="/profile" element={<UserProfile />} />
+            <Route path="/profile/edit" element={<UserProfile mode="edit" />} />
           </Routes>
         </Layout>
         <ToastContainer

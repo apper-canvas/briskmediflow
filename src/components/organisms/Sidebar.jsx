@@ -9,10 +9,11 @@ const navigationItems = [
     { path: '/patients', label: 'Patients', icon: 'Users' },
     { path: '/appointments', label: 'Appointments', icon: 'Calendar' },
     { path: '/doctors', label: 'Doctors', icon: 'UserCheck' },
-    { path: '/billing', label: 'Billing', icon: 'Receipt' },
+{ path: '/billing', label: 'Billing', icon: 'Receipt' },
     { path: '/inventory', label: 'Inventory', icon: 'Package' },
     { path: '/reports', label: 'Reports', icon: 'BarChart3' },
     { path: '/notifications', label: 'Notifications', icon: 'Bell' },
+    { path: '/profile', label: 'Profile', icon: 'User' },
   ]
 
   const SidebarContent = () => (

@@ -1,0 +1,33 @@
+{
+  "Id": 1,
+  "firstName": "Dr. Admin",
+  "lastName": "User",
+  "email": "admin@mediflow.com",
+  "phone": "+1 (555) 123-4567",
+  "department": "Administration",
+  "position": "System Administrator",
+  "bio": "Experienced healthcare administrator with over 10 years of experience managing medical facilities and implementing healthcare technology solutions. Passionate about improving patient care through efficient systems and processes.",
+  "avatar": null,
+  "joinDate": "2023-01-15T00:00:00.000Z",
+  "lastLogin": "2024-12-19T10:30:00.000Z",
+  "isActive": true,
+  "role": "admin",
+  "permissions": [
+    "user_management",
+    "system_settings",
+    "reports_access",
+    "billing_management"
+  ],
+  "preferences": {
+    "theme": "light",
+    "notifications": {
+      "email": true,
+      "push": true,
+      "sms": false
+    },
+    "language": "en",
+    "timezone": "America/New_York"
+  },
+  "createdAt": "2023-01-15T00:00:00.000Z",
+  "updatedAt": "2024-12-19T08:00:00.000Z"
+}
