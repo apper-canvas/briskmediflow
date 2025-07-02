@@ -64,7 +64,7 @@
     @apply status-badge bg-success/10 text-success border border-success/20;
   }
   
-  .gradient-text {
+.gradient-text {
     @apply bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent;
   }
   
