@@ -1,10 +1,42 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import ApperIcon from '@/components/ApperIcon'
 import Button from '@/components/atoms/Button'
 import SearchBar from '@/components/molecules/SearchBar'
+import NotificationPanel from '@/components/molecules/NotificationPanel'
+import notificationService from '@/services/api/notificationService'
 
 const Header = ({ onMenuToggle, searchValue, onSearchChange }) => {
+const [showNotifications, setShowNotifications] = useState(false)
+  const [notifications, setNotifications] = useState([])
+  const [unreadCount, setUnreadCount] = useState(0)
+
+  useEffect(() => {
+    loadNotifications()
+  }, [])
+
+  const loadNotifications = async () => {
+    try {
+      const data = await notificationService.getAll()
+      setNotifications(data)
+      setUnreadCount(data.filter(n => !n.read).length)
+    } catch (error) {
+      console.error('Failed to load notifications:', error)
+    }
+  }
+
+  const handleNotificationRead = async (id) => {
+    try {
+      const notification = notifications.find(n => n.Id === id)
+      if (notification && !notification.read) {
+        await notificationService.update(id, { ...notification, read: true })
+        await loadNotifications()
+      }
+    } catch (error) {
+      console.error('Failed to mark notification as read:', error)
+    }
+  }
+
   return (
     <motion.header
       initial={{ opacity: 0, y: -20 }}
@@ -29,13 +61,27 @@ const Header = ({ onMenuToggle, searchValue, onSearchChange }) => {
       </div>
 
       <div className="flex items-center space-x-3">
-        <Button
-          variant="ghost"
-          icon="Bell"
-          className="!p-2 relative"
-        >
-          <span className="absolute -top-1 -right-1 w-2 h-2 bg-error rounded-full"></span>
-        </Button>
+<div className="relative">
+          <Button
+            variant="ghost"
+            icon="Bell"
+            className="!p-2 relative"
+            onClick={() => setShowNotifications(!showNotifications)}
+          >
+            {unreadCount > 0 && (
+              <span className="absolute -top-1 -right-1 min-w-[18px] h-[18px] bg-error text-white text-xs rounded-full flex items-center justify-center font-medium">
+                {unreadCount > 9 ? '9+' : unreadCount}
+              </span>
+            )}
+          </Button>
+          
+          <NotificationPanel
+            isOpen={showNotifications}
+            onClose={() => setShowNotifications(false)}
+            notifications={notifications.slice(0, 5)}
+            onNotificationRead={handleNotificationRead}
+          />
+        </div>
         
         <Button
           variant="ghost"

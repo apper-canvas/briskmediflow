@@ -1,0 +1,98 @@
+[
+  {
+    "Id": 1,
+    "title": "New Appointment Scheduled",
+    "message": "Patient John Smith has scheduled an appointment for tomorrow at 10:00 AM with Dr. Wilson.",
+    "type": "appointment",
+    "timestamp": "2024-01-15T09:30:00Z",
+    "read": false
+  },
+  {
+    "Id": 2,
+    "title": "Patient Registration Complete",
+    "message": "New patient Sarah Johnson has completed registration and is ready for appointment scheduling.",
+    "type": "patient",
+    "timestamp": "2024-01-15T08:45:00Z",
+    "read": false
+  },
+  {
+    "Id": 3,
+    "title": "System Maintenance Scheduled",
+    "message": "System maintenance is scheduled for tonight from 11:00 PM to 2:00 AM. Some features may be temporarily unavailable.",
+    "type": "system",
+    "timestamp": "2024-01-14T16:20:00Z",
+    "read": true
+  },
+  {
+    "Id": 4,
+    "title": "Low Inventory Alert",
+    "message": "Medication 'Amoxicillin 500mg' is running low. Current stock: 15 units. Reorder threshold: 20 units.",
+    "type": "alert",
+    "timestamp": "2024-01-14T14:15:00Z",
+    "read": false
+  },
+  {
+    "Id": 5,
+    "title": "Appointment Cancelled",
+    "message": "Patient Michael Brown has cancelled their appointment scheduled for January 16th at 2:00 PM.",
+    "type": "appointment",
+    "timestamp": "2024-01-14T11:30:00Z",
+    "read": true
+  },
+  {
+    "Id": 6,
+    "title": "New Doctor Added",
+    "message": "Dr. Emily Davis has been added to the system and is now available for appointment scheduling.",
+    "type": "system",
+    "timestamp": "2024-01-13T15:45:00Z",
+    "read": true
+  },
+  {
+    "Id": 7,
+    "title": "Payment Overdue",
+    "message": "Patient Robert Wilson has an overdue payment of $250.00 for services rendered on December 20th, 2023.",
+    "type": "alert",
+    "timestamp": "2024-01-13T10:20:00Z",
+    "read": false
+  },
+  {
+    "Id": 8,
+    "title": "Lab Results Available",
+    "message": "Lab results for patient Lisa Martinez are now available and ready for review.",
+    "type": "patient",
+    "timestamp": "2024-01-12T16:00:00Z",
+    "read": true
+  },
+  {
+    "Id": 9,
+    "title": "Prescription Refill Request",
+    "message": "Patient David Anderson has requested a refill for prescription #RX-2024-001. Current medication: Lisinopril 10mg.",
+    "type": "patient",
+    "timestamp": "2024-01-12T13:25:00Z",
+    "read": false
+  },
+  {
+    "Id": 10,
+    "title": "Critical System Alert",
+    "message": "Multiple failed login attempts detected from IP address 192.168.1.100. Please review security logs.",
+    "type": "alert",
+    "timestamp": "2024-01-11T22:10:00Z",
+    "read": true
+  },
+  {
+    "Id": 11,
+    "title": "Appointment Reminder",
+    "message": "Reminder: Patient Jennifer Lee has an appointment tomorrow at 9:00 AM with Dr. Thompson.",
+    "type": "appointment",
+    "timestamp": "2024-01-11T17:00:00Z",
+    "read": true
+  },
+  {
+    "Id": 12,
+    "title": "Insurance Verification Needed",
+    "message": "Patient Mark Wilson's insurance information needs verification before next appointment on January 18th.",
+    "type": "patient",
+    "timestamp": "2024-01-11T14:30:00Z",
+    "read": false
+  }
+]

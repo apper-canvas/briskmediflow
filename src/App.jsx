@@ -9,13 +9,14 @@ import Doctors from '@/components/pages/Doctors'
 import Billing from '@/components/pages/Billing'
 import Inventory from '@/components/pages/Inventory'
 import Reports from '@/components/pages/Reports'
+import Notifications from '@/components/pages/Notifications'
 
 function App() {
   return (
     <Router>
       <div className="App bg-gray-50 min-h-screen">
         <Layout>
-          <Routes>
+<Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/patients" element={<Patients />} />
             <Route path="/appointments" element={<Appointments />} />
@@ -23,6 +24,7 @@ function App() {
             <Route path="/billing" element={<Billing />} />
             <Route path="/inventory" element={<Inventory />} />
             <Route path="/reports" element={<Reports />} />
+            <Route path="/notifications" element={<Notifications />} />
           </Routes>
         </Layout>
         <ToastContainer

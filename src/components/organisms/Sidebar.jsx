@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import ApperIcon from '@/components/ApperIcon'
 
 const Sidebar = ({ isOpen, onClose }) => {
-  const navigationItems = [
+const navigationItems = [
     { path: '/', label: 'Dashboard', icon: 'LayoutDashboard' },
     { path: '/patients', label: 'Patients', icon: 'Users' },
     { path: '/appointments', label: 'Appointments', icon: 'Calendar' },
@@ -12,6 +12,7 @@ const Sidebar = ({ isOpen, onClose }) => {
     { path: '/billing', label: 'Billing', icon: 'Receipt' },
     { path: '/inventory', label: 'Inventory', icon: 'Package' },
     { path: '/reports', label: 'Reports', icon: 'BarChart3' },
+    { path: '/notifications', label: 'Notifications', icon: 'Bell' },
   ]
 
   const SidebarContent = () => (
