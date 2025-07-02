@@ -80,7 +80,12 @@ theme: {
           700: '#b91c1c',
           800: '#991b1b',
           900: '#7f1d1d',
-        },
+},
+        // Simplified color aliases for CSS class compatibility
+        success: '#22c55e', // maps to success.500
+        warning: '#f59e0b', // maps to warning.500  
+        error: '#ef4444',   // maps to danger.500
+        info: '#3b82f6',    // maps to primary.500
       },
       fontFamily: {
         display: ['Inter', 'system-ui', 'sans-serif'],
