@@ -1,0 +1,97 @@
+[
+  {
+    "Id": 1,
+    "name": "Dr. Sarah Smith",
+    "specialization": "General Medicine",
+    "email": "sarah.smith@hospital.com",
+    "phone": "+1-555-1001",
+    "consultationFee": 150,
+    "schedule": {
+      "morning": {
+        "start": "09:00",
+        "end": "12:00"
+      },
+      "evening": {
+        "start": "14:00",
+        "end": "17:00"
+      },
+      "workingDays": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+    }
+  },
+  {
+    "Id": 2,
+    "name": "Dr. Michael Johnson",
+    "specialization": "Orthopedics",
+    "email": "michael.johnson@hospital.com",
+    "phone": "+1-555-1002",
+    "consultationFee": 200,
+    "schedule": {
+      "morning": {
+        "start": "08:30",
+        "end": "12:30"
+      },
+      "evening": {
+        "start": "14:30",
+        "end": "18:00"
+      },
+      "workingDays": ["Monday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    }
+  },
+  {
+    "Id": 3,
+    "name": "Dr. Emily Davis",
+    "specialization": "Dermatology",
+    "email": "emily.davis@hospital.com",
+    "phone": "+1-555-1003",
+    "consultationFee": 175,
+    "schedule": {
+      "morning": {
+        "start": "09:30",
+        "end": "12:30"
+      },
+      "evening": {
+        "start": "15:00",
+        "end": "17:30"
+      },
+      "workingDays": ["Tuesday", "Wednesday", "Thursday", "Friday"]
+    }
+  },
+  {
+    "Id": 4,
+    "name": "Dr. Robert Wilson",
+    "specialization": "Cardiology",
+    "email": "robert.wilson@hospital.com",
+    "phone": "+1-555-1004",
+    "consultationFee": 250,
+    "schedule": {
+      "morning": {
+        "start": "08:00",
+        "end": "12:00"
+      },
+      "evening": {
+        "start": "13:00",
+        "end": "16:00"
+      },
+      "workingDays": ["Monday", "Tuesday", "Thursday", "Friday"]
+    }
+  },
+  {
+    "Id": 5,
+    "name": "Dr. Lisa Anderson",
+    "specialization": "Pediatrics",
+    "email": "lisa.anderson@hospital.com",
+    "phone": "+1-555-1005",
+    "consultationFee": 140,
+    "schedule": {
+      "morning": {
+        "start": "09:00",
+        "end": "13:00"
+      },
+      "evening": {
+        "start": "14:00",
+        "end": "17:00"
+      },
+      "workingDays": ["Monday", "Tuesday", "Wednesday", "Friday", "Saturday"]
+    }
+  }
+]

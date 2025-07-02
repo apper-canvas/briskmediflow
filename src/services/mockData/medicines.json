@@ -1,0 +1,92 @@
+[
+  {
+    "Id": 1,
+    "name": "Paracetamol 500mg",
+    "category": "Tablets",
+    "quantity": 15,
+    "unit": "pieces",
+    "minStock": 50,
+    "expiryDate": "2025-06-15"
+  },
+  {
+    "Id": 2,
+    "name": "Amoxicillin 250mg",
+    "category": "Capsules",
+    "quantity": 120,
+    "unit": "pieces",
+    "minStock": 30,
+    "expiryDate": "2025-03-20"
+  },
+  {
+    "Id": 3,
+    "name": "Cough Syrup",
+    "category": "Syrups",
+    "quantity": 25,
+    "unit": "bottles",
+    "minStock": 10,
+    "expiryDate": "2024-12-31"
+  },
+  {
+    "Id": 4,
+    "name": "Insulin Injection",
+    "category": "Injections",
+    "quantity": 3,
+    "unit": "vials",
+    "minStock": 10,
+    "expiryDate": "2024-09-15"
+  },
+  {
+    "Id": 5,
+    "name": "Antiseptic Cream",
+    "category": "Ointments",
+    "quantity": 40,
+    "unit": "tubes",
+    "minStock": 15,
+    "expiryDate": "2025-08-30"
+  },
+  {
+    "Id": 6,
+    "name": "Eye Drops",
+    "category": "Drops",
+    "quantity": 18,
+    "unit": "bottles",
+    "minStock": 12,
+    "expiryDate": "2024-11-20"
+  },
+  {
+    "Id": 7,
+    "name": "Bandages",
+    "category": "Surgical Supplies",
+    "quantity": 8,
+    "unit": "boxes",
+    "minStock": 20,
+    "expiryDate": "2026-01-15"
+  },
+  {
+    "Id": 8,
+    "name": "Blood Pressure Medication",
+    "category": "Tablets",
+    "quantity": 75,
+    "unit": "pieces",
+    "minStock": 25,
+    "expiryDate": "2025-04-10"
+  },
+  {
+    "Id": 9,
+    "name": "Vitamin D3",
+    "category": "Tablets",
+    "quantity": 200,
+    "unit": "pieces",
+    "minStock": 50,
+    "expiryDate": "2025-12-31"
+  },
+  {
+    "Id": 10,
+    "name": "Pain Relief Gel",
+    "category": "Ointments",
+    "quantity": 30,
+    "unit": "tubes",
+    "minStock": 10,
+    "expiryDate": "2025-07-25"
+  }
+]

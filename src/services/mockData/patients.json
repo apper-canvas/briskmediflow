@@ -1,0 +1,84 @@
+[
+  {
+    "Id": 1,
+    "name": "John Doe",
+    "dateOfBirth": "1985-06-15",
+    "gender": "male",
+    "phone": "+1-555-0123",
+    "email": "john.doe@email.com",
+    "address": "123 Main St, Anytown, ST 12345",
+    "emergencyContact": {
+      "name": "Jane Doe",
+      "phone": "+1-555-0124"
+    },
+    "bloodGroup": "O+",
+    "medicalHistory": [
+      {
+        "date": "2024-01-10",
+        "condition": "Hypertension",
+        "treatment": "Prescribed medication",
+        "doctor": "Dr. Smith"
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "name": "Jane Wilson",
+    "dateOfBirth": "1990-03-22",
+    "gender": "female",
+    "phone": "+1-555-0456",
+    "email": "jane.wilson@email.com",
+    "address": "456 Oak Ave, Somewhere, ST 67890",
+    "emergencyContact": {
+      "name": "Robert Wilson",
+      "phone": "+1-555-0457"
+    },
+    "bloodGroup": "A+",
+    "medicalHistory": []
+  },
+  {
+    "Id": 3,
+    "name": "Bob Brown",
+    "dateOfBirth": "1978-11-08",
+    "gender": "male",
+    "phone": "+1-555-0789",
+    "email": "bob.brown@email.com",
+    "address": "789 Pine Rd, Elsewhere, ST 13579",
+    "emergencyContact": {
+      "name": "Sarah Brown",
+      "phone": "+1-555-0790"
+    },
+    "bloodGroup": "B-",
+    "medicalHistory": []
+  },
+  {
+    "Id": 4,
+    "name": "Alice Green",
+    "dateOfBirth": "1995-07-30",
+    "gender": "female",
+    "phone": "+1-555-0321",
+    "email": "alice.green@email.com",
+    "address": "321 Elm St, Nowhere, ST 24680",
+    "emergencyContact": {
+      "name": "Tom Green",
+      "phone": "+1-555-0322"
+    },
+    "bloodGroup": "AB+",
+    "medicalHistory": []
+  },
+  {
+    "Id": 5,
+    "name": "Mike Davis",
+    "dateOfBirth": "1982-12-12",
+    "gender": "male",
+    "phone": "+1-555-0654",
+    "email": "mike.davis@email.com",
+    "address": "654 Birch Ln, Anyplace, ST 97531",
+    "emergencyContact": {
+      "name": "Lisa Davis",
+      "phone": "+1-555-0655"
+    },
+    "bloodGroup": "O-",
+    "medicalHistory": []
+  }
+]

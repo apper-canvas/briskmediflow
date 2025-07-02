@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 1,
+    "patientId": "1",
+    "doctorId": "1",
+    "date": "2024-01-15",
+    "timeSlot": "10:00",
+    "status": "confirmed",
+    "reason": "Regular checkup",
+    "notes": "Follow-up on blood pressure medication"
+  },
+  {
+    "Id": 2,
+    "patientId": "2",
+    "doctorId": "2",
+    "date": "2024-01-15",
+    "timeSlot": "14:30",
+    "status": "pending",
+    "reason": "Consultation for back pain",
+    "notes": ""
+  },
+  {
+    "Id": 3,
+    "patientId": "3",
+    "doctorId": "1",
+    "date": "2024-01-15",
+    "timeSlot": "16:15",
+    "status": "confirmed",
+    "reason": "Diabetes monitoring",
+    "notes": "Bring latest test results"
+  },
+  {
+    "Id": 4,
+    "patientId": "4",
+    "doctorId": "3",
+    "date": "2024-01-16",
+    "timeSlot": "09:30",
+    "status": "confirmed",
+    "reason": "Skin condition consultation",
+    "notes": ""
+  },
+  {
+    "Id": 5,
+    "patientId": "5",
+    "doctorId": "2",
+    "date": "2024-01-16",
+    "timeSlot": "11:00",
+    "status": "pending",
+    "reason": "Joint pain assessment",
+    "notes": "Patient reports morning stiffness"
+  },
+  {
+    "Id": 6,
+    "patientId": "1",
+    "doctorId": "4",
+    "date": "2024-01-17",
+    "timeSlot": "15:00",
+    "status": "confirmed",
+    "reason": "Cardiology consultation",
+    "notes": "Referred by Dr. Smith"
+  }
+]

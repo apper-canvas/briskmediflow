@@ -1,0 +1,107 @@
+[
+  {
+    "Id": 1,
+    "patientId": "1",
+    "appointmentId": "1",
+    "items": [
+      {
+        "description": "General Consultation",
+        "quantity": 1,
+        "unitPrice": 150
+      },
+      {
+        "description": "Blood Pressure Medication",
+        "quantity": 2,
+        "unitPrice": 25
+      }
+    ],
+    "totalAmount": 200,
+    "paidAmount": 200,
+    "status": "paid",
+    "date": "2024-01-15"
+  },
+  {
+    "Id": 2,
+    "patientId": "2",
+    "appointmentId": "2",
+    "items": [
+      {
+        "description": "Orthopedic Consultation",
+        "quantity": 1,
+        "unitPrice": 200
+      },
+      {
+        "description": "X-Ray",
+        "quantity": 1,
+        "unitPrice": 75
+      }
+    ],
+    "totalAmount": 275,
+    "paidAmount": 0,
+    "status": "pending",
+    "date": "2024-01-15"
+  },
+  {
+    "Id": 3,
+    "patientId": "3",
+    "appointmentId": "3",
+    "items": [
+      {
+        "description": "Diabetes Consultation",
+        "quantity": 1,
+        "unitPrice": 150
+      },
+      {
+        "description": "Blood Sugar Test",
+        "quantity": 1,
+        "unitPrice": 30
+      },
+      {
+        "description": "Insulin",
+        "quantity": 1,
+        "unitPrice": 45
+      }
+    ],
+    "totalAmount": 225,
+    "paidAmount": 100,
+    "status": "pending",
+    "date": "2024-01-15"
+  },
+  {
+    "Id": 4,
+    "patientId": "4",
+    "appointmentId": "4",
+    "items": [
+      {
+        "description": "Dermatology Consultation",
+        "quantity": 1,
+        "unitPrice": 175
+      },
+      {
+        "description": "Topical Medication",
+        "quantity": 1,
+        "unitPrice": 35
+      }
+    ],
+    "totalAmount": 210,
+    "paidAmount": 210,
+    "status": "paid",
+    "date": "2024-01-16"
+  },
+  {
+    "Id": 5,
+    "patientId": "5",
+    "appointmentId": "5",
+    "items": [
+      {
+        "description": "Joint Assessment",
+        "quantity": 1,
+        "unitPrice": 200
+      }
+    ],
+    "totalAmount": 200,
+    "paidAmount": 0,
+    "status": "pending",
+    "date": "2024-01-16"
+  }
+]
