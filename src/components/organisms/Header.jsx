@@ -3,11 +3,10 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import ApperIcon from "@/components/ApperIcon";
 import Button from "@/components/atoms/Button";
-import SearchBar from "@/components/molecules/SearchBar";
 import NotificationPanel from "@/components/molecules/NotificationPanel";
 import notificationService from "@/services/api/notificationService";
 
-const Header = ({ onMenuToggle, searchValue, onSearchChange, onClearSearch }) => {
+const Header = ({ onMenuToggle }) => {
   const navigate = useNavigate()
   const [showNotifications, setShowNotifications] = useState(false)
   const [notifications, setNotifications] = useState([])
@@ -45,22 +44,13 @@ const Header = ({ onMenuToggle, searchValue, onSearchChange, onClearSearch }) =>
       animate={{ opacity: 1, y: 0 }}
       className="bg-white border-b border-gray-200 h-16 flex items-center justify-between px-4 lg:px-6"
     >
-      <div className="flex items-center space-x-4">
+<div className="flex items-center space-x-4">
         <Button
           variant="ghost"
           icon="Menu"
           onClick={onMenuToggle}
           className="lg:hidden !p-2"
         />
-        
-<div className="hidden lg:block">
-          <SearchBar
-            value={searchValue}
-            onChange={onSearchChange}
-            onClear={onClearSearch}
-            placeholder="Search patients, doctors, appointments..."
-          />
-        </div>
       </div>
 
       <div className="flex items-center space-x-3">
