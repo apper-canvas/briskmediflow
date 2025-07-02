@@ -11,6 +11,7 @@ import Inventory from '@/components/pages/Inventory'
 import Reports from '@/components/pages/Reports'
 import Notifications from '@/components/pages/Notifications'
 import UserProfile from '@/components/pages/UserProfile'
+import Documentation from '@/components/pages/Documentation'
 function App() {
   return (
     <Router>
@@ -24,9 +25,10 @@ function App() {
             <Route path="/billing" element={<Billing />} />
 <Route path="/inventory" element={<Inventory />} />
             <Route path="/reports" element={<Reports />} />
-            <Route path="/notifications" element={<Notifications />} />
+<Route path="/notifications" element={<Notifications />} />
             <Route path="/profile" element={<UserProfile />} />
             <Route path="/profile/edit" element={<UserProfile mode="edit" />} />
+            <Route path="/documentation" element={<Documentation />} />
           </Routes>
         </Layout>
         <ToastContainer
